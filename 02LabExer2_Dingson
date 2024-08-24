@@ -1,0 +1,28 @@
+using System;
+
+public class Dingson02labex2
+{
+    public static void Main(string[] args)
+    {
+      
+        
+       //nilagay ko dito yung mag ask ng 5 grades 
+        Console.WriteLine("Enter 5 grades seperated by new line: ");
+        double a  = Convert.ToDouble(Console.ReadLine());
+        
+        double b = Convert.ToDouble(Console.ReadLine());
+        
+        double c = Convert.ToDouble(Console.ReadLine());
+        
+        double d = Convert.ToDouble(Console.ReadLine());
+        
+        double e = Convert.ToDouble(Console.ReadLine());
+        
+        // dito computation seperate ko sya
+        double average = a + b + c + d + e ;//pag nilagyan ko ng divide 5 dito (e / 5) di nya ma read yung / 5 nag proceed sya sa total ng pinag plus
+        double ave = average / 5;//after makuha yung average nag gawa ako panibago data type kasi mag error sa average
+       
+        int round = (int)average / 5;//dito nag convert ako double to int 
+        Console.WriteLine("The average is "+ ave+ " and round of to "+ round);
+    }
+}
