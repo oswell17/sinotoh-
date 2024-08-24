@@ -1,0 +1,21 @@
+using System;
+
+public class Dingson02labex1
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter the pieces of apple: ");
+        int ab = Convert.ToInt32(Console.ReadLine());
+        //nilagay kona dito ng int kasi pieces lng hinahanap
+        
+        Console.Write("Enter total price of 6 apple(s): ");
+        double ac = Convert.ToDouble(Console.ReadLine());
+        //dito double kasi may decimal na input
+        
+        int bb = (int)ac;//dito nag convert ako double into int 
+        
+        Console.WriteLine("The total price of 6 apple(s) is " + ac);
+        Console.WriteLine("The value of original price is "+ ac);
+        Console.WriteLine("The value of converted price os "+ bb);//eto yung converted double into int 
+    }
+}
