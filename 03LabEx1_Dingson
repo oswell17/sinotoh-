@@ -1,0 +1,49 @@
+using System;
+
+public class A03LabEx1_Dingson
+{
+    public static void Main(string[] args)
+    {
+       Console.Write("Enter Name: ");
+       String n = Console.ReadLine();
+       Console.WriteLine("Enter your Grade in the following Subjects:");
+       
+       Console.Write("English: "); // it will ask the englist variable and you can put grades into it
+       double A = Convert.ToDouble(Console.ReadLine());
+       
+       Console.Write("Math: ");
+       double B = Convert.ToDouble(Console.ReadLine());
+       
+       Console.Write("Science: ");
+       double C = Convert.ToDouble(Console.ReadLine());
+       
+       Console.Write("Filipino: ");
+       double D = Convert.ToDouble(Console.ReadLine());
+       
+       Console.Write("History: ");
+       double E = Convert.ToDouble(Console.ReadLine());
+       
+       double R = A + B + C + D + E;
+       double RO = R / 5;// after the total grade computed i divided it into 5
+      // i put if else to know what student average grade 
+      Console.WriteLine("");
+       if(RO <99 && RO > 86){
+           Console.WriteLine("The Student is EXCELLENT " );
+           Console.WriteLine("The General Average of " + n + " is " + RO);
+           
+       }
+       else if(RO < 85 && RO > 75){
+           Console.WriteLine("The Student PASSED");
+           Console.WriteLine("The General Average of " + n + " is "+ RO);
+           
+       }
+       else if(RO < 74 && RO > 60){
+           Console.WriteLine("The Student FAILED");
+       Console.WriteLine("The General Average of " + n + " is " + RO);
+       
+       }
+       else{ Console.WriteLine("");
+           
+       }
+    }
+}
