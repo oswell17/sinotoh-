@@ -1,0 +1,37 @@
+using System;
+  public class Dingson { 
+   public static void Main(String[ ]args){ 
+
+Console.Write("Enter the number of apples you want to purchase: ");
+double no = Convert.ToDouble(Console.ReadLine());
+double[]app = {0.00, 32.50, 65, 97.50, 130}; // ginawa ko na syang array why not
+//pag dito ko nilagay yung int convert di sya nagana so binukod ko sya para umayos at focus sya sa basta yun :)
+//then if else dito if pipiliin nya ⬇️⬇️
+if(no == 0){
+int convert = (int)app[0];//nag lagay ako dito para isang convert lng per if else nya 
+Console.WriteLine("The total price of " + no + " apples is " + app[0]);
+Console.WriteLine("The value of the converted price is "+ convert );
+}
+else if(no == 1){
+int convert = (int)app[1];
+Console.WriteLine("The total price of " + no + " apples is " + app[1]);
+Console.WriteLine("The value of the converted price is "+ convert );
+}
+else if(no == 2) {
+int convert = (int)app[2];
+Console.WriteLine("The total price of " + no + " apples is " + app[2]);
+Console.WriteLine("The value of the converted price is "+ convert );
+}
+else if(no == 3){
+int convert = (int)app[3];
+Console.WriteLine("The total price of " + no + " apples is " + app[3]);
+Console.WriteLine("The value of the converted price is "+ convert );
+}
+else if(no == 4){
+int convert = (int)app[4];
+Console.WriteLine("The total price of " + no + " apples is " + app[4]);
+Console.WriteLine("The value of the converted price is "+ convert );
+}
+else{Console.WriteLine("Invalid please select the number of apples");}
+}
+}
