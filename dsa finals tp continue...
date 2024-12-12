@@ -1,0 +1,47 @@
+package com.mycompany.schoolprojdsa;
+
+import java.util.*;
+
+public class Schoolprojdsa {
+
+    public static void main(String[] args) throws InterruptedException {
+    inpit();
+
+    }
+   static void inpit() throws InterruptedException{
+          Scanner OS = new Scanner(System.in);
+        System.out.println("Welcome to Reynold's University Im Berns an AI chatbot");
+         Thread.sleep(5000);
+        System.out.print("Berns: may i ask what is your name? ");
+        String name = OS.nextLine().toLowerCase();
+         Thread.sleep(5000);
+        System.out.println("Berns: Hello! "+name+" are going to"
+                + "\nApply or Pay Tuition");
+        String pick = OS.nextLine().toLowerCase();
+          Thread.sleep(5000);
+          if(pick.contains("Apply")){
+              System.out.println("What type of student are you? \n New or Existing STI Student");
+              String ap = OS.nextLine().toLowerCase();
+               Thread.sleep(5000);
+             
+          
+               if (ap.contains("new")){
+                 System.out.println("""
+                                    Choose your Location
+                                     Metro Manila 
+                                     Northern""");
+                  Thread.sleep(5000);
+          }
+             if(ap.contains("Existing STI Student")){
+                 
+             }
+   
+          
+          
+          if(pick.contains("Pay Tuition")){
+              
+          }
+        
+    
+    }
+}
